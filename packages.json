@@ -1,5 +1,5 @@
 {
-    "packageId": "23a52819d9f8f8",
+    "packageId": "9d789cdb9b0f2",
     "name": "sheets",
     "description": "sheet test",
     "buttons": [
@@ -53,9 +53,11 @@
                                 "id": "185f24bbdcb0f9",
                                 "type": "node",
                                 "parent": "302eac36e51d7a",
-                                "children": []
+                                "children": [],
+                                "rules": []
                             }
-                        ]
+                        ],
+                        "rules": []
                     }
                 ],
                 "defaults": {}
@@ -74,15 +76,35 @@
                                     "id": "pressed_x"
                                 },
                                 {
-                                    "type":"presser",
-                                    "id":"presser_x",
-                                    "key":1
+                                    "type": "presser",
+                                    "id": "presser_x",
+                                    "key": 1
                                 },
                                 {
                                     "id": "2e9780c84b85c2"
                                 },
                                 {
                                     "id": "302eac36e51d7a"
+                                },
+                                {
+                                    "id": "developmentname",
+                                    "type": "development",
+                                    "key": "name"
+                                },
+                                {
+                                    "id": "developmentpostcode",
+                                    "type": "development",
+                                    "key": "postcode"
+                                },
+                                {
+                                    "id": "pressed",
+                                    "type": "pressed",
+                                    "key": "pressed"
+                                },
+                                {
+                                    "id": "presser",
+                                    "type": "presser",
+                                    "key": "presser"
                                 }
                             ]
                         },
@@ -90,7 +112,13 @@
                             "sheetName": "testsheet"
                         }
                     },
-                    "aliases": {},
+                    "aliases": {
+                        "developmentname": "devname",
+                        "developmentpostcode": "devpostcode",
+                        "presser": "personpresser",
+                        "2e9780c84b85c2": "option chosen",
+                        "302eac36e51d7a": "sometext"
+                    },
                     "webhookId": "185f24bbdcb0f9"
                 }
             ]
