@@ -69,13 +69,21 @@
                     "parameters": {
                         "dynamic": {
                             "sheetparameters": [
-                                "presser",
-                                "pressed",
-                                "developmentid",
-                                "developmentpostcode",
-                                "developmentname",
-                                "2e9780c84b85c2",
-                                "302eac36e51d7a"
+                                {
+                                    "type": "pressed",
+                                    "id": "pressed_x"
+                                },
+                                {
+                                    "type":"presser",
+                                    "id":"presser_x",
+                                    "key":1
+                                },
+                                {
+                                    id: "2e9780c84b85c2"
+                                },
+                                {
+                                    id: "302eac36e51d7a"
+                                }
                             ]
                         },
                         "static": {
