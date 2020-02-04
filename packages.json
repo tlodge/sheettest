@@ -1,5 +1,5 @@
 {
-    "packageId": "9d789cdb9b0f2",
+    "packageId": "2088d3a2e0236a",
     "name": "sheets",
     "description": "sheet test",
     "buttons": [
@@ -70,7 +70,28 @@
                     "method": "POST",
                     "parameters": {
                         "dynamic": {
-                            "sheetparameters": []
+                            "sheetparameters": [
+                                {
+                                    "id": "presser",
+                                    "type": "presser",
+                                    "key": "presser"
+                                },
+                                {
+                                    "id": "developmentname",
+                                    "type": "development",
+                                    "key": "name"
+                                },
+                                {
+                                    "id": "2e9780c84b85c2",
+                                    "type": "options",
+                                    "key": "2e9780c84b85c2"
+                                },
+                                {
+                                    "id": "302eac36e51d7a",
+                                    "type": "freetext",
+                                    "key": "302eac36e51d7a"
+                                }
+                            ]
                         },
                         "static": {
                             "sheetName": "testsheet"
