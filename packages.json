@@ -1,0 +1,91 @@
+{
+    "packageId": "23a52819d9f8f8",
+    "name": "sheets",
+    "description": "sheet test",
+    "buttons": [
+        {
+            "buttonId": "2488c762e15ff4",
+            "name": "gsheettest",
+            "description": "my first button description",
+            "type": "action",
+            "questions": [
+                {
+                    "question": "some options",
+                    "type": "options",
+                    "values": {
+                        "options": [
+                            "yes",
+                            "no"
+                        ],
+                        "multiple": "single",
+                        "none": false,
+                        "description": "these are some options"
+                    },
+                    "validators": [],
+                    "compulsory": true,
+                    "questionId": "2e9780c84b85c2",
+                    "number": 1
+                },
+                {
+                    "question": "this is a question",
+                    "type": "freetext",
+                    "values": {
+                        "format": "medium",
+                        "description": "these are things"
+                    },
+                    "validators": [],
+                    "compulsory": true,
+                    "questionId": "302eac36e51d7a",
+                    "number": 2
+                }
+            ],
+            "navigation": {
+                "id": "2e9780c84b85c2",
+                "type": "node",
+                "parent": null,
+                "children": [
+                    {
+                        "id": "302eac36e51d7a",
+                        "type": "node",
+                        "parent": "2e9780c84b85c2",
+                        "children": [
+                            {
+                                "id": "185f24bbdcb0f9",
+                                "type": "node",
+                                "parent": "302eac36e51d7a",
+                                "children": []
+                            }
+                        ]
+                    }
+                ],
+                "defaults": {}
+            },
+            "webhooks": [
+                {
+                    "name": "sheet endpoint",
+                    "type": "sheet",
+                    "url": "https://[buttonkit]/api/v1/datastore/sheet",
+                    "method": "POST",
+                    "parameters": {
+                        "dynamic": {
+                            "sheetparameters": [
+                                "presser",
+                                "pressed",
+                                "developmentid",
+                                "developmentpostcode",
+                                "developmentname",
+                                "2e9780c84b85c2",
+                                "302eac36e51d7a"
+                            ]
+                        },
+                        "static": {
+                            "sheetName": "testsheet"
+                        }
+                    },
+                    "aliases": {},
+                    "webhookId": "185f24bbdcb0f9"
+                }
+            ]
+        }
+    ]
+}
