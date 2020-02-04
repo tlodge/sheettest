@@ -70,43 +70,7 @@
                     "method": "POST",
                     "parameters": {
                         "dynamic": {
-                            "sheetparameters": [
-                                {
-                                    "type": "pressed",
-                                    "id": "pressed_x"
-                                },
-                                {
-                                    "type": "presser",
-                                    "id": "presser_x",
-                                    "key": 1
-                                },
-                                {
-                                    "id": "2e9780c84b85c2"
-                                },
-                                {
-                                    "id": "302eac36e51d7a"
-                                },
-                                {
-                                    "id": "developmentname",
-                                    "type": "development",
-                                    "key": "name"
-                                },
-                                {
-                                    "id": "developmentpostcode",
-                                    "type": "development",
-                                    "key": "postcode"
-                                },
-                                {
-                                    "id": "pressed",
-                                    "type": "pressed",
-                                    "key": "pressed"
-                                },
-                                {
-                                    "id": "presser",
-                                    "type": "presser",
-                                    "key": "presser"
-                                }
-                            ]
+                            "sheetparameters": []
                         },
                         "static": {
                             "sheetName": "testsheet"
